@@ -42,6 +42,8 @@ boton.addEventListener("click", event =>{
    tries = 0;
    score=0;
    document.getElementById("Score").innerHTML="Score:" + score
+   document.getElementById("tries").innerHTML= "Tries: "+tries;
+   document.getElementById("found").innerHTML= "Found: "+coincidencias;
 
     colocarCartas(personajes);
     actualizarTiempo();
