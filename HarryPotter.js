@@ -12,7 +12,7 @@ let perdidos=0;
 let tries=0;
 let bestScore = 0
 
-personajes = fetch("https://hp-api.herokuapp.com/api/characters")
+const personajes = fetch("https://hp-api.herokuapp.com/api/characters")
     .then(response =>  response.json(). then(datos => {return  datos.filter(dato => dato.image != "")}))
 boton = document.getElementById("jugar")
 
